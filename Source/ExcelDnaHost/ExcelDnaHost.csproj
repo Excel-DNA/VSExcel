@@ -90,11 +90,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "C:\Work\ExcelDna\ExcelDnaTools\packages\Excel-DNA.0.32.0\tools\ExcelDna.xll" "$(TargetDir)ExcelDnaHost-AddIn.xll*" /C /Y
+    <PostBuildEvent>xcopy "C:\Work\ExcelDna\ExcelDnaTools\Source\packages\Excel-DNA.0.32.0\tools\ExcelDna.xll" "$(TargetDir)ExcelDnaHost-AddIn.xll*" /C /Y
 xcopy "$(TargetDir)ExcelDnaHost-AddIn.dna*" "$(TargetDir)ExcelDnaHost-AddIn64.dna*" /C /Y
-xcopy "C:\Work\ExcelDna\ExcelDnaTools\packages\Excel-DNA.0.32.0\tools\ExcelDna64.xll" "$(TargetDir)ExcelDnaHost-AddIn64.xll*" /C /Y
-"C:\Work\ExcelDna\ExcelDnaTools\packages\Excel-DNA.0.32.0\tools\ExcelDnaPack.exe" "$(TargetDir)ExcelDnaHost-AddIn.dna" /Y
-"C:\Work\ExcelDna\ExcelDnaTools\packages\Excel-DNA.0.32.0\tools\ExcelDnaPack.exe" "$(TargetDir)ExcelDnaHost-AddIn64.dna" /Y</PostBuildEvent>
+xcopy "C:\Work\ExcelDna\ExcelDnaTools\Source\packages\Excel-DNA.0.32.0\tools\ExcelDna64.xll" "$(TargetDir)ExcelDnaHost-AddIn64.xll*" /C /Y
+"C:\Work\ExcelDna\ExcelDnaTools\Source\packages\Excel-DNA.0.32.0\tools\ExcelDnaPack.exe" "$(TargetDir)ExcelDnaHost-AddIn.dna" /Y
+"C:\Work\ExcelDna\ExcelDnaTools\Source\packages\Excel-DNA.0.32.0\tools\ExcelDnaPack.exe" "$(TargetDir)ExcelDnaHost-AddIn64.dna" /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
