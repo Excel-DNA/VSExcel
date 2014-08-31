@@ -1,0 +1,55 @@
+﻿Adding NuGet packages to Templates:
+	http://docs.nuget.org/docs/reference/packages-in-visual-studio-templates
+    Sample: https://bitbucket.org/marcind/nugetinvstemplates
+
+Import/Export vssettings: 
+	http://blogs.msdn.com/b/saraford/archive/2008/12/05/did-you-know-you-can-create-toolbar-buttons-to-quickly-toggle-your-favorite-vs-settings-371.aspx
+	http://stackoverflow.com/questions/21455741/export-import-visual-studio-settings-from-command-line
+	
+Various articles (MZ-Tools):
+	http://www.mztools.com/resources_vsnet_addins.aspx
+	
+Shipping snippets in an extension: http://madskristensen.net/post/shipping-visual-studio-snippets-in-an-extension
+
+Open source add-ins:
+	http://www.diaryofaninja.com/blog/2014/02/18/who-said-building-visual-studio-extensions-was-hard
+	https://bitbucket.org/s_cadwallader/codemaid
+
+Various Bugs (by MZ-Tools guy): 
+	http://connect.microsoft.com/VisualStudio/SearchResults.aspx?UserHandle=Carlos%20J.%20Quintero	
+
+Named Commands in the vsct (by CommandWellOnly:
+	http://social.msdn.microsoft.com/Forums/vstudio/en-US/b805f1d8-1603-49a4-bab4-3f9ec4b1a1e1/creating-a-custom-command-and-accessing-it-by-name?forum=vsx
+
+Project Subtypes (Project Flavor)
+	http://msdn.microsoft.com/en-us/library/bb166488.aspx
+	http://code.msdn.microsoft.com/windowsdesktop/CSVSXProjectSubType-2221cf55
+
+Major Series: LearnVSXNow!
+	http://dotneteers.net/blogs/divedeeper/default.aspx
+
+REPL that is integrated with the Python and Node tools for Visual Studio
+        With Roslyn IntelliSense and injected Application object...?
+	Pipe to Excel process and run on main thread ..
+
+Message Filter to use DTE from other thread: http://www.viva64.com/en/b/0169/#ID0E5YAI
+
+Create other instances / profiles of Visual Studio with different root-suffixes
+   Installing VSIX packages: http://blog.slaks.net/2014-01-27/creating-multiple-visual-studio-profiles-with-rootsuffix/
+   TODO: Check whether the ROT plan can detect the experimental instance.
+   We can update / create registry entries with LocalServer32: "...devenv.exe" /rootsuffix Exp
+   Targeting a specific root suffix: Last comment at http://stackoverflow.com/questions/7294995/developing-multiple-visual-studio-2010-extensions
+	"If you define a property called VSSDKTargetPlatformRegRootSuffix in your package or template project files 
+	 (anything that includes Microsoft.VsSDK.Common.targets), it will publish the extension files there, instead."
+
+.vssettings
+	https://github.com/mrchief/Simplify-Visual-Studio-Menus / http://mrchief2000.wordpress.com/2011/05/18/simplify-visual-studio-context-menus/
+	Command to Import / Export: http://blogs.msdn.com/b/saraford/archive/2008/12/05/did-you-know-you-can-create-toolbar-buttons-to-quickly-toggle-your-favorite-vs-settings-371.aspx
+	Tools.ImportExportSettings
+	Porject to make a GUI for switching settings: https://vsswitch.codeplex.com/
+	(So we can give users the options to switch between simple and cluttered mode)
+
+PVS Addin write-up (SlideShare...?) http://www.slideshare.net/Andrey_Karpov/developing-extension-packages-for-visual-studio-2005200820102012-using-c-with-reallife-samples#
+    Includes COM threading and message filter discussion
+
+Setting for Extension: http://haacked.com/archive/2014/07/30/visual-studios-extensions-settings/
