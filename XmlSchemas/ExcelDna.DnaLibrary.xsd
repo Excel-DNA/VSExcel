@@ -176,9 +176,6 @@
         <xs:attribute name="Path"
                       use="optional"
                       type="xs:string" />
-        <xs:attribute name="AssemblyPath"
-                      use="optional"
-                      type="xs:string" />
         <xs:attribute name="Pack"
                       use="optional"
                       type="Boolean" />
