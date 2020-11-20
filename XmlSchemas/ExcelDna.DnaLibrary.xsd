@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="dna"
            targetNamespace="http://schemas.excel-dna.net/addin/2018/05/dnalibrary"
            attributeFormDefault="unqualified"
@@ -102,6 +102,9 @@
         <xs:attribute name="UseVersionAsOutputVersion"
                       use="optional"
                       type="Boolean" />
+        <xs:attribute name="IncludePdb"
+                      use="optional"
+                      type="Boolean" />
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -180,6 +183,9 @@
                       use="optional"
                       type="xs:string" />
         <xs:attribute name="Pack"
+                      use="optional"
+                      type="Boolean" />
+        <xs:attribute name="IncludePdb"
                       use="optional"
                       type="Boolean" />
       </xs:extension>
